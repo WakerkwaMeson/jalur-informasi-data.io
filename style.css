@@ -1,0 +1,87 @@
+/* ======== Dasar Tampilan Umum ======== */
+body {
+  font-family: Arial, sans-serif;
+  background: #eef3f7; /* Warna latar belakang lembut */
+  padding: 30px;
+  text-align: center;
+}
+
+/* ======== Judul Utama ======== */
+h2 {
+  color: #2c3e50; /* Warna teks gelap */
+  margin-bottom: 40px;
+}
+
+/* ======== Tata Letak Utama Flowchart ======== */
+.flowchart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; /* Jarak antar kolom */
+}
+
+/* ======== Setiap Box Elemen dalam Flowchart ======== */
+.box {
+  background: white;
+  border: 2px solid #3498db; /* Warna garis biru */
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan */
+}
+
+/* ======== Ikon di dalam box ======== */
+.box i {
+  font-size: 30px;
+  color: #3498db; /* Warna ikon biru */
+  margin-bottom: 10px;
+}
+
+/* ======== Panah Vertikal (bawah) ======== */
+.arrow-down {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #7f8c8d;
+}
+
+/* ======== Panah Horizontal (kanan) antar kolom ======== */
+.arrow-right {
+  position: absolute;
+  right: 35px;
+  top: 500%;
+  transform: translateY(50%);
+  font-size: 500px;
+  color: #3498db;
+  
+}
+
+/* ======== Struktur Kolom ======== */
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ======== Label Penanda Urutan (1, 2, 3) ======== */
+.label {
+  background: #e74c3c; /* Merah terang */
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+/* ======== Responsif untuk Layar Kecil (mobile) ======== */
+@media (max-width: 768px) {
+  .flowchart {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .arrow-right {
+    display: none;
+  } */
+}
